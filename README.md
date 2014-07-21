@@ -18,6 +18,7 @@ Just add it to your application configuration file
 return array(
     'mixpanel' => array(
         'key' => 'yourtoken',
+        'consumer' => 'socket',// curl or socket
         ),
     ),
 );
