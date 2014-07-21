@@ -1,0 +1,32 @@
+{
+    "name": "jitb/mixpanel-module",
+    "description": "Zend Framework 2 Module that provides Mixpanel basic functionality",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "http://www.jack.fr/",
+    "keywords": [
+        "mixpanel",
+        "module",
+        "zf2"
+    ],
+    "authors": [
+        {
+            "name": "Martin Supiot",
+            "email": "msupiot@jack.fr",
+            "homepage": "http://www.jack.fr/"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5",
+        "mixpanel/mixpanel-php" : "2.*"
+    },
+    "require-dev": {
+        "zendframework/zendframework": "~2.3"
+    },
+    "autoload": {
+        "psr-0": {
+            "MixpanelModule\\": "src/"
+        }
+    }
+}
