@@ -32,6 +32,16 @@ class Configuration extends AbstractOptions
     protected $debug = false;
 
     /**
+     * @var string
+     */
+    protected $file = null;
+
+    /**
+     * @var callable
+     */
+    protected $errorCallback = null;
+
+    /**
      * @param string $key
      */
     public function setKey($key)
@@ -77,5 +87,37 @@ class Configuration extends AbstractOptions
     public function getDebug()
     {
         return $this->debug;
+    }
+
+    /**
+     * @param string $file
+     */
+    public function setFile($file)
+    {
+        $this->file = $file;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFile()
+    {
+        return $this->file;
+    }
+
+    /**
+     * @param callable $errorCallback
+     */
+    public function setErrorCallback($errorCallback)
+    {
+        $this->errorCallback = $errorCallback;
+    }
+
+    /**
+     * @return callable
+     */
+    public function getErrorCallback()
+    {
+        return $this->errorCallback;
     }
 }
