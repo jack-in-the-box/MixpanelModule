@@ -10,7 +10,7 @@
 return array(
     'service_manager' => array(
         'factories' =>  array(
-            'MixpanelModule\Service\MixpanelServiceFactory' => 'MixpanelModule\Service\MixpanelServiceFactory',
+            'Jitb\MixpanelModule\Service\MixpanelService' => 'Jitb\MixpanelModule\Service\MixpanelServiceFactory',
         ),
     ),
 );

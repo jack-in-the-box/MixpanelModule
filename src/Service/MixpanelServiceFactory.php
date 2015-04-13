@@ -27,7 +27,7 @@ class MixpanelServiceFactory extends AbstractServiceFactory
         $file          = $this->getMixpanelOptions($sl)->getFile();
         $errorCallback = $this->getMixpanelOptions($sl)->getErrorCallback();
         $mp = \Mixpanel::getInstance(
-            $key, 
+            $key,
             array(
                 'consumer'       => $consumer,
                 'debug'          => $debug,
@@ -45,7 +45,8 @@ class MixpanelServiceFactory extends AbstractServiceFactory
      * @param  string $data Error data
      * @return void         Echo the given error
      */
-    function handleMixpanelError($code, $data) {
+    public function handleMixpanelError($code, $data)
+    {
         echo "This is my  customer error handler. I've received an error! code = " . $code . " : data = " . $data . "<br />";
     }
 
@@ -54,6 +55,6 @@ class MixpanelServiceFactory extends AbstractServiceFactory
      */
     public function getOptionsClass()
     {
-        return 'MixpanelModule\Options\Configuration';
+        return 'Jitb\MixpanelModule\Options\Configuration';
     }
 }
