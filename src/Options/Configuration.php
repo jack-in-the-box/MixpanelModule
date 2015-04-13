@@ -7,7 +7,7 @@
  * @author  Martin Supiot <msupiot@jack.fr>
  */
 
-namespace MixpanelModule\Options;
+namespace Jitb\MixpanelModule\Options;
 
 use Zend\Stdlib\AbstractOptions;
 

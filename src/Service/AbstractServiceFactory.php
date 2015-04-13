@@ -7,7 +7,7 @@
  * @author  Martin Supiot <msupiot@jack.fr>
  */
 
-namespace MixpanelModule\Service;
+namespace Jitb\MixpanelModule\Service;
 
 use RuntimeException;
 use Zend\ServiceManager\FactoryInterface;
